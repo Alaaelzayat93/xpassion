@@ -225,6 +225,16 @@ body .btn:hover {
   margin: 30px auto;
 }
 
+/*media for phone*/
+@media (max-width: 500px) {
+  .about {
+    margin: 0 !important;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+}
+
 /*services*/
 /*services*/
 .services {
