@@ -89,6 +89,8 @@ body {
   /*header*/
   /*start about*/
   /*portfolio*/
+  /*services*/
+  /*services*/
 }
 
 body .top {
@@ -244,6 +246,28 @@ body .about .image .layer-content .layer-info .icons {
   width: 40px;
   height: 40px;
   line-height: 40px;
+}
+
+body .services {
+  height: 500px;
+}
+
+body .services .item {
+  position: relative;
+  padding: 20px 15px 5px 70px;
+  border: 1px solid #ddd;
+}
+
+body .services .item i {
+  position: absolute;
+  left: 36px;
+  top: 30px;
+  font-size: 21px;
+  color: #FFBC13;
+}
+
+body .services .item .item-para {
+  color: #afa9a9;
 }
 
 /*end body*/

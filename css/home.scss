@@ -211,6 +211,27 @@ body{
         }
       }
     }
+    /*services*/
+    /*services*/
+    .services{
+      height: 500px;
+      .item{
+        position:relative;
+        padding:20px 15px 5px 70px;
+        border:1px solid #ddd;
+      
+        i{
+          position: absolute;
+          left: 36px;
+          top: 30px;
+          font-size: 21px;
+         color:$maincolor;
+        }
+        .item-para{
+          color:rgb(175, 169, 169);
+        }
+      }
+    }
     
 
   }/*end body*/
