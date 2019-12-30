@@ -122,24 +122,24 @@ body .top .contact .icon {
 }
 
 body .navbar {
-  background: #8e8686;
+  background: #fff;
 }
 
 body .navbar .nav-link {
   font-size: 20px;
-  color: #fff !important;
+  color: #a9291c !important;
   -webkit-transition: all 2s ease-in;
   transition: all 2s ease-in;
 }
 
 body .navbar .nav-link:hover {
-  background: #a9291c;
-  color: #fff;
+  background: #fff;
+  color: #a9291c;
 }
 
 body .navbar .active {
-  background: #a9291c;
-  color: #fff;
+  background: #fff;
+  color: #a9291c;
 }
 
 body #header {

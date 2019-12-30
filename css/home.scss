@@ -107,20 +107,20 @@ body{
     }
     /*navbar*/
     .navbar{
-      background: #8e8686;
+      background: #fff;
       .nav-link{
         font-size: 20px;
-        color:#fff !important;
+        color:$maincolor !important;
         transition: all 2s ease-in;
         &:hover{
-          background: $maincolor;
-          color:#fff;
+          background: #fff;
+          color:$maincolor;
         }
       
       }
       .active{
-        background: $maincolor;
-        color:#fff;
+        background: #fff;
+        color:$maincolor;
       }
     }
     /*header*/
