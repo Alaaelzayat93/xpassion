@@ -9,7 +9,15 @@
 
 /*--Extra-Small Device---*/
 @media (max-width:767px){
-
+/*media for phone*/
+ 
+     .about{
+       margin:0;
+     }
+     h1{
+       font-size: 30px !important ;
+     }
+   
 }
 
 /* --Small Device-- */

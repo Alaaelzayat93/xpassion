@@ -187,9 +187,9 @@ body{
       }
       }
      /*media for phone*/
-     @media(max-width: 500px) {
+     @media all and(max-width: 500px) {
        .about{
-         margin:0 !important;
+         margin:0;
        }
        h1{
          font-size: 30px !important ;
