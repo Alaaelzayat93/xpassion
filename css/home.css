@@ -157,6 +157,7 @@ body #header .carousel-item canvas {
   z-index: 30 !important;
 }
 
+body #header .carousel-item .overlay {
   z-index: 50;
 }
 
