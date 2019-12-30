@@ -149,8 +149,27 @@ body #header {
   z-index: 10;
 }
 
-body #header img {
-  height: 700px;
+body #header .carousel-item {
+  z-index: 20;
+}
+
+body #header .carousel-item canvas {
+  z-index: 30 !important;
+}
+
+  z-index: 50;
+}
+
+body #header .carousel-indicators {
+  z-index: 40;
+}
+
+body #header .carousel-control-next {
+  z-index: 60;
+}
+
+body #header .carousel-control-prev {
+  z-index: 70;
 }
 
 body #header .home-content {
