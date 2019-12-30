@@ -143,21 +143,7 @@ body{
         .title{
           color:#ccc;
         }
-        @keyframes fromleft{
-          0%{
-            transform: translateX(-100px);
-            opacity: 0;
-          }
-          50%{
-            transform: translateX(30px);
-            opacity: 1;
-          }
-          100%{
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-      /**end animation*/
+        
       }
     }
            .btn {
@@ -169,8 +155,6 @@ body{
             -webkit-border-radius: 5px;
             -o-border-radius: 5px;
             -moz-border-radius: 5px;
-            animation:fromleft 4s ease-in-out;
-        animation-delay: 2s;
             cursor: pointer;
           &:hover {
             background: $maincolor;
