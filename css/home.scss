@@ -185,64 +185,30 @@ body{
         width:80%;
         margin:30px auto;
       }
-      .image{
-        margin-bottom: 30px;
-        position: relative;
-        padding: 20px;
-        box-shadow: 2px 10px $maincolor;
-        &:hover .layer-content{
-         opacity: 1;
-         visibility:visible;
-        }
-        .layer-content{
-          position: absolute;
-          top:0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.5);
-          opacity:0;
-          visibility:hidden;
-          .layer-info{
-            position: absolute;
-            top:50%;
-            left:50%;
-            transform: translate(-50%,-50%);
-            .category{
-              color:$background;
-              font-size: $font-size;
-            }
-            .lorem{
-              color:#ddd;
-              font-size: $font-size;
-              font-weight: bold;
-            }
-            .icons{
-              background: $maincolor;
-              color:#fff;
-              width:40px;
-              height: 40px;
-              line-height: 40px;
-            }
-          }
-        }
-      }
+      
     }
     /*services*/
     /*services*/
     .services{
       height: 500px;
+      background:#f2f2f2;
       .item{
         position:relative;
         padding:20px 15px 5px 70px;
-        border:1px solid #ddd;
-      
+        border:1px solid $maincolor;
+      &:hover{
+        background: $maincolor;
+        color:#fff;
+        i{
+          color:#fff;
+        }
+      }
         i{
           position: absolute;
           left: 36px;
           top: 30px;
           font-size: 21px;
-         color:#1469e8;
+         color:$maincolor;
         }
         .item-para{
           color:rgb(175, 169, 169);
