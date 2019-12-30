@@ -126,7 +126,7 @@ body{
     /*header*/
     #header{
       position: relative;
-      height:  100vh;
+      height:  500px !important;
       background-size:cover;
       z-index:10;
       
@@ -175,7 +175,7 @@ body{
       background: linear-gradient(rgba(187, 6, 6, 0.5), rgba(0, 0, 0, 0.5)),url(../images/background/about.jpeg) center/cover fixed no-repeat;
           clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
     color: #fff;
-    margin: 100px 0 50px 0;
+    margin:444px 0 50px 0;
       .section-title{
         color:#fff;
       }

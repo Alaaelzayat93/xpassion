@@ -144,7 +144,7 @@ body .navbar .active {
 
 body #header {
   position: relative;
-  height: 100vh;
+  height: 500px !important;
   background-size: cover;
   z-index: 10;
 }
@@ -211,7 +211,7 @@ body .btn:hover {
   -webkit-clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
           clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
   color: #fff;
-  margin: 100px 0 50px 0;
+  margin: 444px 0 50px 0;
 }
 
 .about .section-title {
