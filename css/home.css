@@ -327,6 +327,68 @@ body .services .line span {
   height: 4px;
   margin: auto;
 }
+/**company*/
+/**company***/
+.company{
+  overflow: hidden;
+  padding: 5px 0
+}
+.company .left-section{
+  padding: 0;
+}
+.company .left-section img{
+  width:100%;
+  height: 100%;
+}
+.company .left-section:after {
+  content: "";
+  position: absolute;
+  width: 96%;
+  left: 2%;
+  top: 30px;
+  height: 92%;
+  background-image: url(../images/background/digital.png);
+  background-size: 100% 100%;
+  z-index: 999;
+}
+.company .right-section {
+  padding: 0;
+  background: #a9291c;
+  color: #fff;}
+.company .right-section h2 {
+  font-size: 40px;
+}
+.company .right-section p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.company .right-section .left {
+  width: 30%;
+  float: left;
+}
+@media (max-width: 992px){
+.company .left-section {
+  width: 100%;
+  float: none;
+}
+
+.company .left-section:after {
+  width: 90%;
+  left: 5%;
+}
+}
+
+
+@media (max-width: 771px){
+.company .left-section:after {
+  width: 90%;
+  left: 5%;
+}
+
+.company .right-section {
+  display: none;
+}
+}
 
 /*end body*/
 /*# sourceMappingURL=home.css.map */
