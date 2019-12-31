@@ -207,6 +207,27 @@ body .about .about-image img:nth-child(2) {
   border-radius: 0 10px 0 0;
 }
 
+body .about .default-btn {
+  height: 46px;
+  background: #a9291c;
+  /* padding: 10px 20px; */
+  border-radius: 10px;
+  display: block;
+  width: 119px;
+  line-height: 46px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+body .about .default-btn:hover {
+  background: none;
+  border: 2px solid #a9291c;
+  color: #a9291c;
+  text-decoration: none;
+}
+
 body .about .about-content h2 {
   text-transform: uppercase;
   margin-bottom: 13px;
