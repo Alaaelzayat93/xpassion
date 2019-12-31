@@ -89,6 +89,9 @@ body {
   /*header*/
   /*start about*/
   /*portfolio*/
+  /*services/*
+    /*********services*************/
+  /*********services*************/
 }
 
 body .top {
@@ -195,6 +198,7 @@ body #header .btn:hover {
 
 body .about {
   background: #f8f8f8;
+  height: 900px;
   margin: 444px 0 50px 0;
 }
 
@@ -258,7 +262,13 @@ body .about .about-info .about-text-box {
   margin-top: 30px;
   border-radius: 5px;
   -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+body .about .about-info .about-text-box:hover {
+  background: #a9291c;
+  color: #fff;
 }
 
 body .about .about-info .about-text-box h3 {
@@ -280,6 +290,42 @@ body .about .about-info .about-text-box p {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-size: 14.5px;
+}
+
+body .services {
+  padding: 50px 50px;
+}
+
+body .services .icon i {
+  color: #a9291c;
+}
+
+body .services .title p {
+  color: #ccc;
+  margin-top: 10px !important;
+}
+
+body .services p {
+  color: #ccc;
+}
+
+body .services h1 {
+  text-align: center;
+}
+
+body .services .line {
+  width: 200px;
+  background: #ddd;
+  height: 1px;
+  margin: auto;
+}
+
+body .services .line span {
+  display: block;
+  width: 100px;
+  background: #a9291c;
+  height: 4px;
+  margin: auto;
 }
 
 /*end body*/
