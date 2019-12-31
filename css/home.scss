@@ -225,16 +225,21 @@ body{
       .about-info {
         margin:50px;
         .about-text-box{
-      
+          background-color: #ffffff;
+          padding: 30px;
+          margin-top: 30px;
+          border-radius: 5px;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
          h3{  
-    text-transform: uppercase;
-    position: relative;
-    border-bottom: 1px solid $maincolor;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    font-size: 20px;
-    font-weight: 900;
-    margin:20px 0;
+        text-transform: uppercase;
+        position: relative;
+        border-bottom: 1px solid $maincolor;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        font-size: 20px;
+        font-weight: 900;
+        margin:20px 0;
          }
     p{
       
