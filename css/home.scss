@@ -173,8 +173,8 @@ body{
     /*start about*/
      /*portfolio*/
      .about{
-      
-       height:500px;  
+       background: #f8f8f8;
+        
        margin:444px 0 50px 0;
        .about-image img:nth-child(2) {
         position: absolute;
@@ -201,6 +201,7 @@ body{
     }
     }
       .about-content{
+
        h2{
         text-transform: uppercase;
         margin-bottom: 13px;
@@ -210,9 +211,9 @@ body{
        }
        span{
         display: block;
-        color: #3aade1;
+        color: $maincolor;
         margin-bottom: 10px;
-        font-size: 18px;
+        font-size: 25px;
       }
       p{
         color: #666666;
@@ -221,7 +222,33 @@ body{
         font-size: 15px;
     }
       }
+      .about-info {
+        margin:50px;
+        .about-text-box{
+      
+         h3{  
+    text-transform: uppercase;
+    position: relative;
+    border-bottom: 1px solid $maincolor;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: 900;
+    margin:20px 0;
+         }
+    p{
+      
+      color:#949090;
+        margin-bottom: 12px;
+        line-height: 1.8;
+        font-size: 15px;
+        transition: 0.5s;
+         font-size: 14.5px;
+    }
+        }
       }
+    }
+      
     
 
 
@@ -319,16 +346,7 @@ body{
      
     
 
-    /*services*/
-    /*services*/
-    .services{
-      height: 550px;
-      background:#f2f2f2;
-      
-    img{
-      height: 370px;
-      width: 263px;
-    }
-    } 
+    
+    
 
   }/*end body*/
