@@ -87,6 +87,10 @@ body {
   font-family: 'Courier Prime', monospace;
   /*navbar*/
   /*header*/
+  /*start about*/
+  /*portfolio*/
+  /*services*/
+  /*services*/
 }
 
 body .top {
@@ -151,29 +155,17 @@ body #header {
 
 body #header .carousel-item {
   z-index: 20;
+  /*
+         canvas { z-index:30 !important;}
+         .overlay { z-index:50;}
+      }
+      .carousel-indicators { z-index:40;}
+      .carousel-control-next { z-index:60;}
+      .carousel-control-prev { z-index:70;}
+      */
 }
 
-body #header .carousel-item canvas {
-  z-index: 30 !important;
-}
-
-body #header .carousel-item .overlay {
-  z-index: 50;
-}
-
-body #header .carousel-indicators {
-  z-index: 40;
-}
-
-body #header .carousel-control-next {
-  z-index: 60;
-}
-
-body #header .carousel-control-prev {
-  z-index: 70;
-}
-
-body #header .home-content {
+body #header .carousel-item .home-content {
   top: 50%;
   position: absolute;
   left: 50%;
@@ -182,11 +174,11 @@ body #header .home-content {
   color: #fff;
 }
 
-body #header .home-content .title {
+body #header .carousel-item .home-content .title {
   color: #ccc;
 }
 
-body .btn {
+body #header .btn {
   width: 150px;
   height: 50px;
   color: #a9291c;
@@ -198,75 +190,53 @@ body .btn {
   cursor: pointer;
 }
 
-body .btn:hover {
+body #header .btn:hover {
   background: #a9291c;
   color: #ddd;
 }
 
-/*start about*/
-/*portfolio*/
-.about {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(187, 6, 6, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/background/about.jpeg) center/cover fixed no-repeat;
-  background: linear-gradient(rgba(187, 6, 6, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background/about.jpeg) center/cover fixed no-repeat;
-  -webkit-clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
-          clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
-  color: #fff;
+body .about {
+  height: 500px;
   margin: 444px 0 50px 0;
 }
 
-.about .section-title {
-  color: #fff;
+body .about .about-image img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  border-radius: 0 10px 0 0;
 }
 
-.about .about-info {
-  color: #fff !important;
-  font-size: 34px;
-  width: 80%;
-  margin: 30px auto;
+body .about .about-content h2 {
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  font-size: 42px;
+  font-weight: 900;
+  color: #ccc;
 }
 
-/*media for phone*/
-@media all and (max-width: 500px) {
-  .about {
-    margin: 0;
-  }
-  h1 {
-    font-size: 30px !important;
-  }
+body .about .about-content span {
+  display: block;
+  color: #3aade1;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
-/*services*/
-/*services*/
-.services {
-  height: 500px;
+body .about .about-content p {
+  color: #666666;
+  margin-bottom: 12px;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+body .services {
+  height: 550px;
   background: #f2f2f2;
 }
 
-.services .item {
-  position: relative;
-  padding: 20px 15px 5px 70px;
-  border: 1px solid #a9291c;
-}
-
-.services .item:hover {
-  background: #a9291c;
-  color: #fff;
-}
-
-.services .item:hover i {
-  color: #fff;
-}
-
-.services .item i {
-  position: absolute;
-  left: 36px;
-  top: 30px;
-  font-size: 21px;
-  color: #a9291c;
-}
-
-.services .item .item-para {
-  color: #afa9a9;
+body .services img {
+  height: 370px;
+  width: 263px;
 }
 
 /*end body*/

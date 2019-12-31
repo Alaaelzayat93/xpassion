@@ -132,13 +132,14 @@ body{
       
       .carousel-item {
          z-index:20;
+         /*
          canvas { z-index:30 !important;}
          .overlay { z-index:50;}
       }
       .carousel-indicators { z-index:40;}
       .carousel-control-next { z-index:60;}
       .carousel-control-prev { z-index:70;}
-      
+      */
       .home-content{
         top: 50%;
         position: absolute;
@@ -172,59 +173,144 @@ body{
     /*start about*/
      /*portfolio*/
      .about{
-      background: linear-gradient(rgba(187, 6, 6, 0.5), rgba(0, 0, 0, 0.5)),url(../images/background/about.jpeg) center/cover fixed no-repeat;
-          clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
-    color: #fff;
-    margin:444px 0 50px 0;
-      .section-title{
-        color:#fff;
-      }
-      .about-info{
-        color:#fff !important;
-        font-size:34px;
-        width:80%;
-        margin:30px auto;
-      }
-      }
-     /*media for phone*/
-     @media all and(max-width: 500px) {
-       .about{
-         margin:0;
+      
+       height:500px;  
+       margin:444px 0 50px 0;
+       .about-image img:nth-child(2) {
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+        border-radius: 0 10px 0 0;
+    }
+      .about-content{
+       h2{
+        text-transform: uppercase;
+        margin-bottom: 13px;
+        font-size: 42px;
+        font-weight: 900;
+        color:#ccc;
        }
-       h1{
-         font-size: 30px !important ;
-       }
-     }
+       span{
+        display: block;
+        color: #3aade1;
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+      p{
+        color: #666666;
+        margin-bottom: 12px;
+        line-height: 1.8;
+        font-size: 15px;
+    }
+      }
+      }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
     
 
     /*services*/
     /*services*/
     .services{
-      height: 500px;
+      height: 550px;
       background:#f2f2f2;
-      .item{
-        position:relative;
-        padding:20px 15px 5px 70px;
-        border:1px solid $maincolor;
-      &:hover{
-        background: $maincolor;
-        color:#fff;
-        i{
-          color:#fff;
-        }
-      }
-        i{
-          position: absolute;
-          left: 36px;
-          top: 30px;
-          font-size: 21px;
-         color:$maincolor;
-        }
-        .item-para{
-          color:rgb(175, 169, 169);
-        }
-      }
-    
-    
+      
+    img{
+      height: 370px;
+      width: 263px;
+    }
+    } 
 
   }/*end body*/
