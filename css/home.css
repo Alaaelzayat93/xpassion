@@ -143,7 +143,6 @@ body .navbar .active {
 
 body #header {
   position: relative;
-  height: 500px !important;
   background-size: cover;
   z-index: 10;
 }

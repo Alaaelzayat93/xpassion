@@ -10,6 +10,9 @@
 /*--Extra-Small Device---*/
 @media (max-width:767px){
 /*media for phone*/
+     #header{
+          height:auto;
+     }
      #header .overlay {
           top: 20% !important;
           left: 27% !important;
@@ -20,14 +23,20 @@
      #header .overlay p{
           font-size: 10px;
      }
-     #header .overlay .footer-header{
+     #header .overlay .header-footer{
           bottom: -50px !important;
           left: 44%;
           width:31px;
      }
      .about{
        margin:0 !important;
-       height:787px;
+       height:auto;
+     }
+     .about .about-info{
+          margin-top:50px !important;
+     }
+     .about  p{
+          width:100% !important;
      }
      .about h1{
        font-size: 18px !important ;
