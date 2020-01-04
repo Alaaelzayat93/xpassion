@@ -10,15 +10,38 @@
 /*--Extra-Small Device---*/
 @media (max-width:767px){
 /*media for phone*/
- 
-     .about{
-       margin:0;
+     #header .overlay {
+          top: 20% !important;
+          left: 27% !important;
      }
-     h1{
-       font-size: 30px !important ;
+     #header .overlay h1{
+          font-size: 19px;
+     }
+     #header .overlay p{
+          font-size: 10px;
+     }
+     #header .overlay .footer-header{
+          bottom: -50px !important;
+          left: 44%;
+          width:31px;
+     }
+     .about{
+       margin:0 !important;
+       height:787px;
+     }
+     .about h1{
+       font-size: 18px !important ;
+     }
+     /*portfolio*/
+     .portfolio .portfolio-text p{
+          width:100% !important;
+          font-size:18px;
      }
      .services{
           height: auto;
+     }
+     .services .item{
+          width:100% !important;
      }
    
 }

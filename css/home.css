@@ -226,41 +226,10 @@ body .about {
   z-index: 2;
   background: linear-gradient(135deg, #20718a 0%, rgba(255, 50, 0, 0.71) 100%), url(../images/background/about.jpg);
   background-position: center;
+  height: 500px;
   background-size: 100%;
   position: relative;
-  height: 550px;
-  padding: 0 15px;
 }
-
-
-
-
-
- body .about .shape-svg{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 250px;
- }
- body .about svg {
-  width: 100%;
-  height: 100%;
-  fill: #fff;
-
- }
- body .about svg path{
-   position: absolute;
-   opacity: 0.9;
- }
-body .about .contact-overlay .data {
-  position: absolute;
-  bottom: 27%;
-  left: 40%;
-}
-
-
-
 
 body .about .about-info {
   margin-top: 100px;
@@ -287,8 +256,9 @@ body .about .about-info .btn-about {
   color: #fff;
   padding: 17px 41px;
   margin: 20px 0;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
   font-weight: bold;
 }
 
@@ -297,12 +267,30 @@ body .about .about-info .btn-about:hover {
   color: #000;
 }
 
+body .about .shape-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+}
+
+body .about svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+
+body .about svg svg path {
+  position: absolute;
+  opacity: 0.9;
+}
+
 body .portfolio {
-  background: url(../images/background/aa.png);
+  background: url(../images/background/ok.png);
   background-repeat: no-repeat;
-  background-position: 90% 0;
-  padding: 20px 0;
-  background-size: contain;
+  background-position: right;
+  background-color: 100%;
 }
 
 body .portfolio p {
@@ -324,36 +312,48 @@ body .services .item {
   width: 25%;
   height: 396px;
   position: relative;
+  -webkit-transition: 2s all ease-in-out;
   transition: 2s all ease-in-out;
 }
-body .services .item:after{
+
+body .services .item:hover {
+  -webkit-transform: scale(1.1) translate(10px);
+          transform: scale(1.1) translate(10px);
+  -webkit-box-shadow: 0 0 6px 2px #333;
+          box-shadow: 0 0 6px 2px #333;
+  z-index: 120;
+}
+
+body .services .item:hover:after {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+body .services .item:after {
   content: "";
   width: 100%;
   height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(121, 89, 89, 0.5)), to(rgba(0, 0, 0, 0.5)));
   background: linear-gradient(rgba(121, 89, 89, 0.5), rgba(0, 0, 0, 0.5));
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
-body .services .item:hover {
-  transform: scale(1.1)translate(10px);
-  box-shadow:0 0 6px 2px #333;
-  z-index: 120;
-}
-body .services .item:hover:after{
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-  
-}
+
 body .services .item img {
-  width: 100%;
-  height: 100%;
+  height: 396px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(121, 89, 89, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(121, 89, 89, 0.5), rgba(0, 0, 0, 0.5));
 }
-body .services .item h2{
+
+body .services .item h2 {
   position: absolute;
-  top: 45px;
-  left: 5px;
+  top: 30%;
+  left: 8px;
   color: #fff;
+  font-weight: bold;
 }
+
 body .works .column {
   margin: 81px 22px !important;
   padding-top: 50px;
@@ -369,11 +369,11 @@ body .works .column:hover i {
 }
 
 body .works .column i {
-  color:#78c4dc;
+  color: #27CFC3;
 }
 
 body .works .column:hover {
-  background: #78c4dc;
+  background: #27CFC3;
   color: #fff;
 }
 
@@ -381,40 +381,47 @@ body .contact {
   position: relative;
   height: 600px;
   width: 100%;
-  background: linear-gradient(135deg,#20718a 0%,#ffffff 100%);
-/*   background: url(../images/background/contact.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-clip-path: polygon(100% 13%, 100% 60%, 100% 100%, 0 100%, 0% 50%, 35% 26%);
-          clip-path: polygon(100% 13%, 100% 60%, 100% 100%, 0 100%, 0% 50%, 35% 26%);
- */}
- body .contact .shape-svg{
+}
+
+body .contact .shape {
   position: absolute;
   top: -13px;
   left: 0;
   width: 100%;
-  height: 250px;
+  height: 614px;
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
- }
- body .contact svg {
+  background: linear-gradient(135deg, #20718a 0%, rgba(255, 50, 0, 0.71) 100%);
+}
+
+body .contact .shape svg {
   width: 100%;
   height: 100%;
   fill: #fff;
-  mix-blend-mode: color !important;
+}
 
- }
- body .contact svg path{
-   position: absolute;
-   opacity: 0.7;
- }
- body .contact svg path:first-child{top:10px} 
- body .contact svg path:nth-child(2){top:20px} 
- body .contact svg path:last-child{top:30px}
+body .contact .shape svg path {
+  position: absolute;
+  opacity: 0.9;
+}
+
+body .contact .shape svg path:first-child {
+  top: 10px;
+}
+
+body .contact .shape svg path:nth-child(2) {
+  top: 20px;
+}
+
+body .contact .shape svg path:last-child {
+  top: 30px;
+}
+
 body .contact .contact-overlay .data {
   position: absolute;
-  bottom: 27%;
+  bottom: 23%;
   left: 40%;
+  z-index: 10;
 }
 
 body .contact .contact-overlay .data h1 {
@@ -446,8 +453,8 @@ body .contact .contact-overlay .data a {
 }
 
 body .footer {
-  background: -webkit-linear-gradient(180deg, #0e5194 0%, #e2e0e0 20%, white 100%);
-  background: linear-gradient(180deg, #0e5194 0%, #e2e0e0 20%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(20%, #cccccc), to(white));
+  background: linear-gradient(180deg, #020024 0%, #cccccc 20%, white 100%);
   color: #666666 !important;
   height: 300px;
 }
