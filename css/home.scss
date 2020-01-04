@@ -88,7 +88,7 @@ body{
         }
       
       }
-      .contact{
+      .connect{
         line-height: 50px;
          color: #ccc;
         .icon{
@@ -216,6 +216,23 @@ body{
      }
 
      }
+     .shape-svg{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 250px;
+     }
+      svg {
+      width: 100%;
+      height: 100%;
+      fill: #fff;
+      svg path{
+        position: absolute;
+        opacity: 0.9;
+      }
+     }
+      
     }
     /*portfolio*/
     .portfolio{
@@ -238,27 +255,99 @@ body{
       margin-top:50px;
   
       .item{
-        float:left;
-        width:25%;
+        float: left;
+          width: 25%;
+          height: 396px;
+          position: relative;
+          transition: 2s all ease-in-out;
+          &:hover{
+            transform: scale(1.1)translate(10px);
+          box-shadow:0 0 6px 2px #333;
+          z-index: 120;
+          }
+          &:hover:after{
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+          }
+        &:after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(121, 89, 89, 0.5), rgba(0, 0, 0, 0.5));
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        
+        
         img{
           height: 396px;
           background: linear-gradient(rgba(121, 89, 89, 0.5),rgba(0,0,0,0.5));
           
-        }  
+        }
+         h2{
+          position: absolute;
+          top: 45px;
+          left: 5px;
+          color: #fff;
+         }  
+        }
+      }
+      /*start works*/
+      .works{
+        .column{
+          margin: 81px 22px !important;
+          padding-top:50px;
+          text-align: center;
+          width: 20%;
+          width: 83%;
+          height: 58%;
+          font-size: 21px;
+          &:hover i{
+            color:#fff;
+          }
+          i{
+            color: #27CFC3;
+          }
+          &:hover{
+            background: #27CFC3;
+            color:#fff;
+          }
         }
       }
       /*start contact*/
       .contact{
         position:relative;
-       svg{
-        height: 561px;
+        height: 600px;
         width: 100%;
-        }
+         .shape-svg{
+          position: absolute;
+          top: -13px;
+          left: 0;
+          width: 100%;
+          height: 250px;
+          transform: rotate(180deg);
+         }
+          svg {
+          width: 100%;
+          height: 100%;
+          fill: #fff;
+          mix-blend-mode: color !important;
+         path{
+           position:absolute;
+           opacity:0.7;
+           &:first-child{top:10px}
+           &:nth-child(2){top:20px}
+           &:last-child{top:30px}
+         }
+         }
+         
+        
+        
           .contact-overlay{
           .data{
             
             position: absolute;
-            bottom:0;
+            bottom:27%;
             left:40%;
             h1{
               font-family: Nunito;
@@ -289,7 +378,31 @@ body{
           }
         }
         }
-      
+        /*start  footer*/
+        .footer{
+          background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(204,204,204,1) 20%, rgba(255,255,255,1) 100%);
+          color: #666666!important;
+          height: 300px;
+          ul{
+            margin:50px auto;
+          i{
+            width:50px;
+            height: 50px;
+            line-height: 50px;
+            color:#333;
+            border:2px solid #fff;
+            text-align: center;
+            border-radius: 50%;
+          }
+
+        }
+        .footer-text span{
+          display: block;
+          /* text-align: center; */
+          transform: translate(100%, 19px);
+          font-size: 26px;
+        }
+        }
     
     
 
