@@ -43,6 +43,11 @@
      .services .item{
           width:100% !important;
      }
+     .contact .contact-overlay .data{
+          height: 58px !important;
+           line-height: 62px !important;
+          font-size: 25px !important;
+     }
    
 }
 
