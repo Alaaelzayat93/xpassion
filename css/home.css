@@ -228,6 +228,7 @@ body .about {
   height: 548px;
   background-size: cover;
   position: relative;
+  width: 100%;
 }
 
 body .about .about-info {
@@ -484,6 +485,7 @@ body .footer .footer-text span {
 body .footer footer span {
   font-size: 22px;
   text-align: center;
+  display: block;
 }
 
 /*end body*/

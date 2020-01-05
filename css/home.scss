@@ -185,6 +185,7 @@ body{
       height: 548px;
       background-size:cover;
       position: relative;
+      width:100%;
       .about-info{
         margin-top:100px;
         margin-left:42px;
@@ -414,6 +415,7 @@ body{
           span{
             font-size: 22px;
             text-align: center;
+            display: block;
           }
         }
         }
