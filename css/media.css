@@ -54,6 +54,7 @@
      }
      .services .item{
           width:100% !important;
+          float: none !important;
      }
      .contact .contact-overlay .data{
           height: 58px !important;
