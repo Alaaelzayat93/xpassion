@@ -118,7 +118,7 @@ body{
     /*header*/
     #header{
       position: relative;
-      
+      margin: -8px 0 !important;
       background-size:cover;
       z-index:10;
       video{
@@ -178,12 +178,12 @@ body{
     /*start about*/
      /*portfolio*/
      .about{
-      margin: 259px 0 0 0;
+      
       z-index: 2;
       background:linear-gradient(135deg,#20718a 0%,rgba(255,50,0,0.71) 100%), url(../images/background/about.jpg);
       background-position: center;
       height: 500px;
-      background-size: 100%;
+      background-size:cover;
       position: relative;
       .about-info{
         margin-top:100px;
@@ -250,6 +250,7 @@ body{
         line-height: 58px;
         font-weight: 700;
         width: 64%;
+        color: #333;
       }
     }
     /*start services*******/
@@ -408,6 +409,12 @@ body{
           /* text-align: center; */
           transform: translate(100%, 19px);
           font-size: 26px;
+        }
+        footer{
+          span{
+            font-size: 22px;
+            text-align: center;
+          }
         }
         }
     

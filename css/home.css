@@ -143,6 +143,7 @@ body .navbar .active {
 
 body #header {
   position: relative;
+  margin: -8px 0 !important;
   background-size: cover;
   z-index: 10;
 }
@@ -221,12 +222,11 @@ body #header .overlay .header-footer .scroll {
 }
 
 body .about {
-  margin: 259px 0 0 0;
   z-index: 2;
   background: linear-gradient(135deg, #20718a 0%, rgba(255, 50, 0, 0.71) 100%), url(../images/background/about.jpg);
   background-position: center;
   height: 500px;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
 }
 
@@ -300,6 +300,7 @@ body .portfolio p {
   line-height: 58px;
   font-weight: 700;
   width: 64%;
+  color: #333;
 }
 
 body .services {
@@ -478,6 +479,11 @@ body .footer .footer-text span {
   -webkit-transform: translate(100%, 19px);
           transform: translate(100%, 19px);
   font-size: 26px;
+}
+
+body .footer footer span {
+  font-size: 22px;
+  text-align: center;
 }
 
 /*end body*/
